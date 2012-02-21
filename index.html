@@ -1,0 +1,18 @@
+---
+layout: default
+title: Johnny Huang
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Featured Open Source Projects</h1>
+  <ul class="posts">
+	  <li><a href="http://github.com/hzqtc/fmd/">FMD</a>: Douban FM Daemon (inspired by Music Player Daemon).</li>
+  </ul>
+</div>
