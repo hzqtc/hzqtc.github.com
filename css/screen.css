@@ -28,10 +28,11 @@ p {
 
 a {
 	color: #00a;
+	text-decoration: none;
 }
 
 a:hover {
-	color: black;
+	text-decoration: underline;
 }
 
 /*****************************************************************************/
@@ -50,9 +51,8 @@ ul.posts li {
 }
 
 ul.posts span {
-	color: #aaa;
+	color: #666;
 	font-family: monospace;
-	font-size: 80%;
 }
 
 /*****************************************************************************/
@@ -62,7 +62,7 @@ ul.posts span {
 /*****************************************************************************/
 
 .site {
-	font-size: 11pt;
+	font-size: 10pt;
 	text-align: justify;
 	width: 60em;
 	margin: 3em auto;
@@ -70,34 +70,25 @@ ul.posts span {
 }
 
 .title {
-	color: #a00;
+	color: #00a;
 	font-weight: bold;
 	margin-bottom: 2em;
 }
 
-.site .title a {
-	color: #a00;
-	text-decoration: none;
-}
-
-.site .title a:hover {
-	color: black;
-}
-
-.site .title a.extra {
-	color: #aaa;
+.site .title a{
+	color: #444;
 	margin-left: 1em;
 	font-variant: small-caps;
 }
 
-.site .title a.extra:hover {
+.site .title a:hover {
 	color: black;
+	text-decoration: none;
 }
 
 .site .footer {
-	font-size: 80%;
-	color: #666;
-	border-top: 4px solid #eee;
+	color: #444;
+	border-top: 4px solid #aaa;
 	margin-top: 2em;
 	overflow: hidden;
 }
@@ -112,10 +103,6 @@ ul.posts span {
 	margin-left: 5em;
 }
 
-.site .footer .link a {
-	color: #8085C1;
-}
-
 /*****************************************************************************/
 /*
 /* Posts
@@ -123,8 +110,9 @@ ul.posts span {
 /*****************************************************************************/
 
 #post p.meta {
-	color: #aaa;
+	color: #666;
 	margin: 0;
+	font-family: monospace;
 }
 
 #post ul,
