@@ -6,7 +6,7 @@ title: Categories
 <div id="home">
 	<h1>Categories</h1>
 	{% for cate in site.categories %}
-	<h2>{{ cate[0] }} &raquo; {{ cate[1].size }}</h2>
+	<h2 id="category_{{ cate[0] }}">{{ cate[0] }} &raquo; {{ cate[1].size }}</h2>
 	<ul class="posts">
 		{% for post in cate[1] %}
 		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

@@ -4,6 +4,12 @@ layout: default
 <div id="post">
 	<h1>{{ page.title }}</h1>
 	<p class="meta">{{ page.date | date_to_string }}</p>
+	<p class="meta">
+	Category: <a href="/categories.html#category_{{ page.category }}">{{ page.category }}</a>. Tags: 
+	{% for tag in page.tags %}
+	<a href="/tags.html#tag_{{ tag }}">{{ tag }}</a>{% if forloop.last%}.{% else %},{% endif %}
+	{% endfor %}
+	</p>
 	{{ content }}
 </div>
 

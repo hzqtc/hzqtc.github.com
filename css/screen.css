@@ -122,6 +122,11 @@ ul.posts span {
 /*
 /*****************************************************************************/
 
+#post p.meta {
+	color: #aaa;
+	margin: 0;
+}
+
 #post ul,
 #post ol {
 	margin-left: 1.35em;
