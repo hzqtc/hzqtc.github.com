@@ -6,3 +6,5 @@ url: http://hzqtc.github.com/
 
 permalink: /:year/:month/:title.html
 pygments: true
+
+exclude: README.md
