@@ -2,4 +2,7 @@ safe: true
 auto: true
 server: true
 server_port: 8080
+url: http://hzqtc.github.com/
+
+permalink: /:year/:month/:title.html
 pygments: true
