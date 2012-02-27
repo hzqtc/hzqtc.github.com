@@ -115,6 +115,11 @@ ul.posts span {
 	font-family: monospace;
 }
 
+#post p img {
+    padding: 3px;
+    border: 1px solid #ddd;
+}
+
 #post ul,
 #post ol {
 	margin-left: 1.35em;
@@ -124,6 +129,7 @@ ul.posts span {
 	border: 1px solid #ddd;
 	padding: 0 0.5em;
 	overflow: auto;
+    margin: 1em 0;
 }
 
 #post code {
