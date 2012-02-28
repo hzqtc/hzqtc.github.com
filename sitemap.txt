@@ -1,0 +1,7 @@
+---
+title: Sitemap
+---
+
+{% for post in site.posts %}
+http://hzqtc.github.com{{ post.url }}
+{% endfor %}
