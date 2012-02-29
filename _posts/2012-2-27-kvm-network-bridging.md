@@ -1,8 +1,8 @@
 ---
 layout: post
 title: KVM Network Bridging
-category: other
-tags: [kvm, virtualmachine]
+category: virtualization
+tags: [kvm, network, bridge]
 ---
 
 As many other Hypervisors, KVM provide several types of networking. KVM use NAT in default, in which case the guest can reach the outside world (the host and all place the host can reach) but the outside world cannot reach the guest. That means, if you don't need to access the guest through network (SSH for example), NAT is good enough for you. However, if you want more, let me introduce you the bridging way.
