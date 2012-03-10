@@ -102,4 +102,4 @@ Now everything is setup, start guest with the following parameters:
 
     qemu-kvm -hda /path/to/vm.img -net nic -net tap,script=/path/to/qemu-ifup,downscript=/path/to/qemu-ifdown
 
-The last thing is to setup guest's network as the same as the host but choose a unique IP address. All the scripts in this article can be download [here](https://github.com/hzqtc/scripts/tree/master/kvm).
+The last thing is to setup guest's network as the same as the host but choose a unique IP address.
