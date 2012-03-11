@@ -2,7 +2,7 @@
 layout: post
 title: Start Blog in English
 category: other
-tags: [jekyll, blog, github]
+tags: [jekyll, github]
 ---
 
 So I decided to start blog in English, but only about technical stuffs. Actually, I've been thinking of blog in English for quite a long time. I setup this new English blog so English posts won't be mixed up with my existed Chinese posts. I'll translate some prominent posts from my [Chinese Blog](http://johnny-huang.appspot.com/) and post them here.

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Repeat Commands on a Dozen VMs with a Single Loop
-category: virtualization
-tags: [ssh, batch]
+category: utility
+tags: [ssh]
 ---
 
 When I was playing with a dozen of identical VirtualMachines, I always need to repeat some commands on each of them. This is painful: open VNC (or SSH) of the VM, type some long and boring commands and repeat the same thing on another VM. Then I figure out a way to avoid repeat. Everybody hates *REPEAT*, right?

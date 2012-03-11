@@ -86,7 +86,6 @@ div.post span.hang {
     width: 100px;
     text-align: center;
     padding: 3px;
-    text-transform: capitalize;
 }
 
 div.post p.meta {
@@ -133,7 +132,6 @@ div.post img {
 
 #side ul li {
     margin: 5px 0;
-    text-transform: capitalize;
 }
 
 #pagination, #footer {
