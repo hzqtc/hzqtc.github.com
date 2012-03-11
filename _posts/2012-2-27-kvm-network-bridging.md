@@ -15,7 +15,9 @@ In a typical bridged network environment, all guest are connected to a virtual b
 
 Before writing scripts and typing commands, install some tools we need: `ip`, `brctl` and `tunctl`. In ArchLinux, install the following packages:
 
-    # pacman -S --need iproute2 bridge-utils uml_utilities
+{% highlight bash %}
+pacman -S --need iproute2 bridge-utils uml_utilities
+{% endhighlight %}
 
 ## Create a bridge
 
