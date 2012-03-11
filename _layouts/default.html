@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Johnny Huang &raquo; {{ page.title }}</title>
-		<link href="/atom.xml" rel="alternate" title="Johnny Huang" type="application/atom+xml">
-		<link rel="stylesheet" href="/css/syntax.css">
-		<link rel="stylesheet" href="/css/screen.css">
+    <head>
+        <meta charset="utf-8">
+        <title>Johnny Huang &raquo; {{ page.title }}</title>
+        <link href="/atom.xml" rel="alternate" title="Johnny Huang" type="application/atom+xml">
+        <link href="/static/common.css" rel="stylesheet">
+        <script src="/static/highlight.pack.js"></script>
+        <link href="/static/highlight.css" rel="stylesheet">
+        <script>hljs.initHighlightingOnLoad();</script>
         <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-29543489-1']);
             _gaq.push(['_trackPageview']);
 
             (function() {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-             })();
-         </script>
-	</head>
-	<body>
-		<div class="site">
-			<div class="title">
-				Johnny Huang
-				<a href="/index.html">home</a>
-				<a href="/categories.html">categories</a>
-				<a href="/tags.html">tags</a>
-				<a href="/atom.xml">feed</a>
-			</div>
-			{{ content }}
-			<div class="footer">
-				<div class="info">
-					<p>
-					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
-					Source code at <a href="https://github.com/hzqtc/hzqtc.github.com">GitHub</a>.
-					</p>
-				</div>
-				<div class="link">
-					<p>
-					<a href="http://github.com/hzqtc/">github.com/hzqtc</a><br />
-					<a href="http://twitter.com/hzqtc/">twitter.com/hzqtc</a><br />
-					<a href="http://johnny-huang.appspot.com/">johnny-huang.appspot.com</a>
-					</p>
-				</div>
-				<div class="contact">
-					<p>
-					Johnny Huang<br />
-					hzqtc1229@gmail.com
-					</p>
-				</div>
-			</div>
-		</div>
-	</body>
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1><a href="/">Johnny Huang</a></h1>
+                <h2>Whatever scares you or excites you, go do it!</h2>
+            </div>
+            <div id="side">
+                <h1>categories</h1>
+                <ul>
+                    {% for category in site.categories %}
+                    <li><a href="/categories.html#category_{{ category[0] }}">{{ category[0] }} ({{ category[1].size }})</a></li>
+                    {% endfor %}
+                </ul>
+                <h1>tags</h1>
+                <ul>
+                    {% for tag in site.tags %}
+                    <li><a href="/tags.html#tag_{{ tag[0] }}">{{ tag[0] }} ({{ tag[1].size }})</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {{ content }}
+            <div id="footer">
+                <div id="info">
+                    Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+                    Source code at <a href="https://github.com/hzqtc/hzqtc.github.com">GitHub</a>.
+                    Subscribe blog <a href="/atom.xml">feed</a>.
+                </div>
+                <div id="link">
+                    <p>
+                    <a href="http://github.com/hzqtc/">github.com/hzqtc</a><br />
+                    <a href="http://twitter.com/hzqtc/">twitter.com/hzqtc</a><br />
+                    <a href="http://johnny-huang.appspot.com/">johnny-huang.appspot.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

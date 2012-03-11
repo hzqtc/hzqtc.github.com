@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: serif;
+    font-size: 14px;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #6188f2;
+}
+
+a:hover {
+    color: #f29161;
+}
+
+#container {
+    width: 800px;
+    margin: 30px auto;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+#header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+#header h1 a {
+    text-decoration: none;
+    color: #42588c;
+}
+
+#header h2 {
+    font-size: 1.5em;
+}
+
+div.post {
+    float: left;
+    width: 650px;
+    position: relative;
+    margin: 20px 0;
+}
+
+div.post h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+div.post h1 a {
+    color: #42588c;
+}
+
+div.post h2 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+div.post pre, div.post p {
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+div.post p {
+    text-align: justify;
+}
+
+div.post span.date, div.post span.category, div.post span.tag {
+    background-color: #42588c;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    left: -120px;
+    top: 0;
+    width: 100px;
+    text-align: center;
+    padding: 3px;
+    text-transform: capitalize;
+}
+
+div.post p.meta {
+    font-style: italic;
+}
+
+div.post pre {
+    white-space: pre-wrap;
+}
+
+div.post code {
+    font-family: monospace;
+    font-size: 0.85em;
+}
+
+div.post p code, div.post pre {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+div.post img {
+    padding: 3px;
+    border: 1px solid #ddd;
+}
+
+#side {
+    float: right;
+    width: 150px;
+    text-align: right;
+    margin: 20px 0;
+}
+
+#side h1 {
+    font-size: 1.5em;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+#side ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#side ul li {
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+#pagination, #footer {
+    clear: both;
+    padding: 20px 0;
+    border-top: 3px double #eee;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination ul {
+    list-style: none;
+}
+
+#pagination ul li {
+    display: inline;
+    padding: 0 5px;
+}
+
+#pagination li.current-page {
+    background-color: #42588c;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#footer {
+    overflow: hidden;
+}
+
+#footer #info {
+    float: left;
+}
+
+#footer #link {
+    float: right;
+    line-height: 1.5em;
+}

@@ -4,7 +4,8 @@ server: true
 server_port: 8080
 url: http://hzqtc.github.com/
 
+pygments: false
 permalink: /:year/:month/:title.html
-pygments: true
+paginate: 2
 
 exclude: README.md
