@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
     <h1>{{ page.title }}</h1>
-    <span class="date">{{ page.date | date_to_string }}</span>
+    <span class="hang">{{ page.date | date_to_string }}</span>
     <p class="meta">
     Category: <a href="/categories.html#category_{{ page.category }}">{{ page.category }}</a>. Tags: 
     {% for tag in page.tags %}

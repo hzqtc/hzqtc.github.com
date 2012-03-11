@@ -39,6 +39,31 @@
                     <li><a href="/tags.html#tag_{{ tag[0] }}">{{ tag[0] }} ({{ tag[1].size }})</a></li>
                     {% endfor %}
                 </ul>
+                <h1>archives</h1>
+                <ul>
+                    {% assign date = '' %}
+                    {% assign count = 0 %}
+                    {% for post in site.posts %}
+
+                    {% capture ndate %}{{ post.date | date: '%b %Y' }}{% endcapture %}
+                    {% if date == '' %}
+                    {% assign date = ndate %}
+                    {% endif %}
+
+                    {% if date != ndate %}
+                    <li><a href="/archives.html#archive_{{ post.date | date: '%Y_%m' }}">{{ date }} ({{ count }})</a></li>
+                    {% assign date = ndate %}
+                    {% assign count = 1 %}
+                    {% else %}
+                    {% capture count %}{{ count | plus:'1' }}{% endcapture %}
+                    {% endif %}
+
+                    {% if forloop.last %}
+                    <li><a href="/archives.html#archive_{{ post.date | date: '%Y_%m' }}">{{ date }} ({{ count }})</a></li>
+                    {% endif %}
+
+                    {% endfor %}
+                </ul>
             </div>
             {{ content }}
             <div id="footer">

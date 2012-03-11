@@ -1,0 +1,20 @@
+---
+layout: default
+title: Tags
+---
+
+{% assign date = '' %}
+{% for post in site.posts %}
+
+{% capture ndate %}{{ post.date | date: '%b %Y' }}{% endcapture %}
+{% if date != ndate %}
+    {% assign date = ndate %}
+    {% if forloop.first == false %}
+    </div>
+    {% endif %}
+    <div class="post" id="archive_{{ post.date | date: '%Y_%m' }}">
+    <span class="hang">{{ date }}</span>
+{% endif %}
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+{% endfor %}

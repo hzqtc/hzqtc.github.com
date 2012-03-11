@@ -76,7 +76,7 @@ div.post p {
     text-align: justify;
 }
 
-div.post span.date, div.post span.category, div.post span.tag {
+div.post span.hang {
     background-color: #42588c;
     color: #fff;
     border-radius: 5px;
