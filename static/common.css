@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: serif;
+    font-family: "Droid Serif", "Georgia", serif;
     font-size: 14px;
     color: #333;
 }
@@ -97,8 +97,8 @@ div.post pre {
 }
 
 div.post code {
-    font-family: monospace;
-    font-size: 0.85em;
+    font-family: "Monaco", "Consolas", monospace;
+    font-size: 0.9em;
 }
 
 div.post p code, div.post pre {
