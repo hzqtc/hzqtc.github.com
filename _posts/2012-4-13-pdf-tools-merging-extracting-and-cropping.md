@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "PDF Tools: Merging, Extracting and Cropping"
-category: pdf
-tags: [ghostscript, pdfcrop]
+category: utility
+tags: [pdf, ghostscript, pdfcrop]
 ---
 
 PDF manipulations such as merging, extracting and croping are the most ordinary things in eveyday life. But people feel difficult to do such jobs because of unawareness of some exordinary PDF tools. I'm gonna to introduce you a few PDF tools.
