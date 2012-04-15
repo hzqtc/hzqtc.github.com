@@ -17,14 +17,6 @@ The PDF file used in the experiment has more than 1500 pages. And both programs 
 
 Render time is simply obtain by the `time` command and measured in seconds.
 
-{% highlight plain %}
-#   poppler mupdf   p/100p  m/100p
-100 13.5    8.49    13.5    8.49
-200 31.21   16.88   15.61   8.44
-400 59.15   30.41   14.79   7.6
-800 111.03  64.23   13.88   8.03
-{% endhighlight %}
-
 ![](/image/poppler_vs_mupdf.png)
 
 The result shows that MuPDF is 95% faster than Poppler at most and 78% faster at average. Poppler uses about 14 seconds to render 100 pages while MuPDF only uses about 8 seconds.
