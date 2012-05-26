@@ -9,6 +9,8 @@ I'm rewriting some of my python applications using C. One of them plays online m
 
 ![](/image/mp3.png)
 
+## Play local files
+
 Well, the coding part is rather easy. Initialize, allocate some resources, decode some bytes, play the decoded bytes, keep decoding until all done, clean up and shut down. The following sample code shows how to play a mp3 file give in commnd line arguments with libmpg123 and libao.
 
 {% highlight c %}
@@ -82,6 +84,8 @@ Run the programm with a mp3 file path in command line.
 {% highlight bash %}
 ./play /path/to/file.mp3
 {% endhighlight %}
+
+## Play URLs
 
 It's a little complicated to play HTTP URLs because you can't pass a URL directly to `mpg123_open`. We should use `mpg123_open_feed` instead. We also use `libcurl` to read HTTP URLs and feed the received data for decoding using `mpg123_feed`. Then we use `mpg123_decode_frame` to try to decode a audio frame. Based on the return value of `mpg123_decode_frame`, we are able to decide the following situations: a frame is successfuly decoded, a new decoding format is encountered or more data is required.
 
@@ -171,4 +175,4 @@ Run the programm with a mp3 url in command line.
 ./playurl http://url.to/file.mp3
 {% endhighlight %}
 
-We use `libcurl` to open URL and `play_stream` is called to process the downloaded buffer. The major difference between local file version and URL version is we use different decoding interface. **Notice the `do...while` loop in `play_stream`, it can't be omitted because a piece of buffer may contains several frames.**
+We use `libcurl` to open URL and `play_stream` is called to process the downloaded buffer. The major difference between local file version and URL version is we use different decoding interface. **Notice the `do...while` loop in `play_stream`, it can't be omitted because a piece of downloaded buffer may contains several frames to be decoded.**
