@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Linux IPC (1): Pipe"
+title: "Linux IPC with Pipes"
 category: programming
 tags: [ipc, pipe]
 ---
@@ -80,4 +80,4 @@ int main()
 }
 {% endhighlight %}
 
-The suitable situation to use pipe is IPC among related processes (related by `fork`) and the communication should be simple enough to use raw binary bytes. The perfect and classic application of pipe is executing binary programs, which is the scenario behind almost every command line typed in a shell. The limitation of pipe is also straightforward: only applies to realted processes.
+The suitable situation to use pipe is IPC among related processes (related by `fork`) and the communication should be simple enough to use raw binary bytes. The perfect and classic application of pipe is executing binary programs, which is the scenario behind almost every command line typed in a shell. The limitation of pipe is also straightforward: only applies to realted processes and only one-to-one communications. For more advanced IPC, consider FIFO, MessageQueue, Shared Memory and Socket.
