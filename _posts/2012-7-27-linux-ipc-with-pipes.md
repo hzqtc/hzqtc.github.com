@@ -43,12 +43,17 @@ int main()
             // connect pp2c to stdin
             close(pp2c[1]);
             dup2(pp2c[0], STDIN_FILENO);
+            close(pp2c[0]);
             // connect pc2p to stdout
             close(pc2p[0]);
             dup2(pc2p[1], STDOUT_FILENO);
+            close(pc2p[1]);
 
             // exec "rev" to reverse lines
             execlp("rev", "rev", (char*) NULL);
+            // exit with code 127 if exec fails
+            perror("exec failed");
+            exit(127);
             break;
         // parent
         default:
