@@ -52,7 +52,7 @@
                         {% endif %}
 
                         {% if date != ndate %}
-                        <li><a href="/archives.html#archive_{{ post.date | date: '%Y_%m' }}">{{ date }} ({{ count }})</a></li>
+                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}">{{ date }} ({{ count }})</a></li>
                         {% assign date = ndate %}
                         {% assign count = 1 %}
                         {% else %}
@@ -60,7 +60,7 @@
                         {% endif %}
 
                         {% if forloop.last %}
-                        <li><a href="/archives.html#archive_{{ post.date | date: '%Y_%m' }}">{{ date }} ({{ count }})</a></li>
+                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}">{{ date }} ({{ count }})</a></li>
                         {% endif %}
 
                         {% endfor %}
