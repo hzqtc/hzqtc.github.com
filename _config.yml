@@ -1,11 +1,8 @@
 safe: true
-auto: true
-server: true
-server_port: 8080
 url: http://hzqtc.github.com/
 
 pygments: false
 permalink: /:year/:month/:title.html
-paginate: 5
+paginate: 1
 
 exclude: README.md
