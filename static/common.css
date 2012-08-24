@@ -113,6 +113,10 @@ div.post img {
 
 ul#post_neighbours {
     list-style: none;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-bottom: 3px double #eee;
+    border-top: 3px double #eee;
 }
 
 ul#post_neighbours li {
