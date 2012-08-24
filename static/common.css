@@ -111,6 +111,26 @@ div.post img {
     border: 1px solid #ddd;
 }
 
+ul#post_neighbours {
+    list-style: none;
+}
+
+ul#post_neighbours li {
+    display: inline;
+}
+
+ul#post_neighbours li.right {
+    float: right;
+}
+
+ul#post_neighbours li.left:before {
+    content: "« ";
+}
+
+ul#post_neighbours li.right:after {
+    content: " »";
+}
+
 #side {
     float: right;
     width: 150px;
