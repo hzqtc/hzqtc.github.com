@@ -7,6 +7,8 @@ tags: [kvm, network]
 
 As many other hypervisors, KVM provide several types of networking. KVM use NAT in default, in which case the guest can reach the outside world (the host and all place the host can reach) but the outside world cannot reach the guest. That means, if you don't need to access the guest through network (SSH for example), NAT is good enough for you. However, if you want more, let me introduce you the bridging way.
 
+<!-- more start -->
+
 ## Concept
 
 In a typical bridged network environment, all guest are connected to a virtual bridge. A host network interface is also connected to the bridge. The packets are forwarded to the guests based on their MAC address, just like any other bridges. In more detai, each guest has a corresponding tap device in the host. These tap devices are both connected to the bridge and the guest, as a network channel.
@@ -105,3 +107,5 @@ Now everything is setup, start guest with the following parameters:
     qemu-kvm -hda /path/to/vm.img -net nic -net tap,script=/path/to/qemu-ifup,downscript=/path/to/qemu-ifdown
 
 The last thing is to setup guest's network as the same as the host but choose a unique IP address.
+
+<!-- more end -->

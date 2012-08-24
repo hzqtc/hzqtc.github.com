@@ -7,6 +7,8 @@ tags: [pdf, ghostscript, pdfcrop]
 
 PDF manipulations such as merging, extracting and croping are the most ordinary things in eveyday life. But people feel difficult to do such jobs because of unawareness of some exordinary PDF tools. I'm gonna to introduce you a few PDF tools.
 
+<!-- more start -->
+
 ## Ghostscript
 
 The first tool (or toolkit, more precisely) is [Ghostscript](http://www.ghostscript.com/). In Archlinux, simply use pacman to install it: `pacman -S ghostscript`.
@@ -54,3 +56,5 @@ gs -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dQUIET -sPAPERSIZE=a4 -dPDFFitPage -sOut
 {% endhighlight %}
 
 In the above example, the pagesize of original PDF is assumed to A4. And the `-dPDFFitPage` option make sure the cropped PDF is resized instead of expanded.
+
+<!-- more end -->

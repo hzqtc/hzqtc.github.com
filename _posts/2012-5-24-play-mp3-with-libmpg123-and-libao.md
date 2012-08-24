@@ -7,6 +7,8 @@ tags: [mp3, audio, libmpg123, libao]
 
 I'm rewriting some of my python applications using C. One of them plays online mp3 audio. I used gstreamer to play mp3 and I'm considering switching to a more lightweight solution. Finally, I choose [libmpg123](http://www.mpg123.de/) and [libao](http://xiph.org/ao/). Libmpg123 is used to decode mp3 and libao is then used to make the sound.
 
+<!-- more start -->
+
 ![](/image/mp3.png)
 
 ## Play local files
@@ -176,3 +178,5 @@ Run the programm with a mp3 url in command line.
 {% endhighlight %}
 
 We use `libcurl` to open URL and `play_stream` is called to process the downloaded buffer. The major difference between local file version and URL version is we use different decoding interface. **Notice the `do...while` loop in `play_stream`, it can't be omitted because a piece of downloaded buffer may contains several frames to be decoded.**
+
+<!-- more end -->
