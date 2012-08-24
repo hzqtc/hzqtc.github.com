@@ -14,14 +14,14 @@ layout: default
 
     {{ content }}
 
-    <ul id="post_neighbours">
+    <div id="post_neighbours">
         {% if page.previous %}
-        <li class="left"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+        <div class="left"><a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a></div>
         {% endif %}
         {% if page.next %}
-        <li class="right"><a href="{{ page.next.url }}">{{ page.next.title }}</a><li>
+        <div class="right"><a href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a><div>
         {% endif %}
-    </ul>
+    </div>
 
     <div id="disqus_thread"></div>
     <script src="http://hzqtc.disqus.com/embed.js"></script>

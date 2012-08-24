@@ -111,28 +111,20 @@ div.post img {
     border: 1px solid #ddd;
 }
 
-ul#post_neighbours {
-    list-style: none;
+div#post_neighbours {
     padding: 20px 0;
     margin: 20px 0;
+    height: 20px;
     border-bottom: 3px double #eee;
     border-top: 3px double #eee;
 }
 
-ul#post_neighbours li {
-    display: inline;
+div#post_neighbours div.left {
+    float: left;
 }
 
-ul#post_neighbours li.right {
+div#post_neighbours div.right {
     float: right;
-}
-
-ul#post_neighbours li.left:before {
-    content: "« ";
-}
-
-ul#post_neighbours li.right:after {
-    content: " »";
 }
 
 #side {
