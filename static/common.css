@@ -46,7 +46,7 @@ a:hover {
 
 div.post {
     float: left;
-    width: 650px;
+    width: 600px;
     position: relative;
     margin: 20px 0;
 }
@@ -76,6 +76,7 @@ div.post p {
 }
 
 div.post span.hang {
+    font-family: sans-serif;
     background-color: #42588c;
     color: #fff;
     border-radius: 5px;
@@ -133,8 +134,7 @@ div.post img {
 
 #side {
     float: right;
-    width: 150px;
-    text-align: right;
+    width: 160px;
     margin: 20px 0;
 }
 
@@ -151,7 +151,7 @@ div.post img {
 }
 
 #side ul li {
-    margin: 5px 0;
+    line-height: 1.8em;
 }
 
 #pagination, #footer {
@@ -180,14 +180,9 @@ div.post img {
 }
 
 #footer {
-    overflow: hidden;
+    text-align: right;
 }
 
-#footer #info {
-    float: left;
-}
-
-#footer #link {
-    float: right;
-    line-height: 1.5em;
+#footer p {
+    line-height: 1.8em;
 }

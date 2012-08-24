@@ -5,6 +5,7 @@
         <title>Johnny Huang &raquo; {{ page.title }}</title>
         <link href="/atom.xml" rel="alternate" title="Johnny Huang" type="application/atom+xml">
         <link href="/static/common.css" rel="stylesheet">
+        <link href="/static/font-awesome.css" rel="stylesheet">
         <script src="/static/highlight.pack.js"></script>
         <link href="/static/highlight.css" rel="stylesheet">
         <script>hljs.initHighlightingOnLoad();</script>
@@ -28,16 +29,24 @@
             </div>
             <div id="main">
                 <div id="side">
+                    <h1>links</h1>
+                    <ul>
+                        <li><a href="/atom.xml"><i class="icon-rss"></i>Atom Feed</a></li>
+                        <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#122;&#113;&#116;&#99;&#49;&#50;&#50;&#57;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><i class="icon-envelope-alt"></i>Email</a></li>
+                        <li><a href="http://github.com/hzqtc/"><i class="icon-github"></i>Github</a></li>
+                        <li><a href="http://twitter.com/hzqtc/"><i class="icon-twitter"></i>Twitter</a></li>
+                        <li><a href="http://johnny-huang.appspot.com/"><i class="icon-globe"></i>Chinese Blog</a></li>
+                    </ul>
                     <h1>categories</h1>
                     <ul>
                         {% for category in site.categories %}
-                        <li><a href="/categories.html#category_{{ category[0] }}">{{ category[0] }} ({{ category[1].size }})</a></li>
+                        <li><a href="/categories.html#category_{{ category[0] }}"><i class="icon-folder-close"></i>{{ category[0] }} ({{ category[1].size }})</a></li>
                         {% endfor %}
                     </ul>
                     <h1>tags</h1>
                     <ul>
                         {% for tag in site.tags %}
-                        <li><a href="/tags.html#tag_{{ tag[0] }}">{{ tag[0] }} ({{ tag[1].size }})</a></li>
+                        <li><a href="/tags.html#tag_{{ tag[0] }}"><i class="icon-tag"></i>{{ tag[0] }} ({{ tag[1].size }})</a></li>
                         {% endfor %}
                     </ul>
                     <h1>archives</h1>
@@ -52,7 +61,7 @@
                         {% endif %}
 
                         {% if date != ndate %}
-                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}">{{ date }} ({{ count }})</a></li>
+                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><i class="icon-hdd"></i>{{ date }} ({{ count }})</a></li>
                         {% assign date = ndate %}
                         {% assign count = 1 %}
                         {% else %}
@@ -60,7 +69,7 @@
                         {% endif %}
 
                         {% if forloop.last %}
-                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}">{{ date }} ({{ count }})</a></li>
+                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><i class="icon-hdd"></i>{{ date }} ({{ count }})</a></li>
                         {% endif %}
 
                         {% endfor %}
@@ -69,18 +78,8 @@
                 {{ content }}
             </div>
             <div id="footer">
-                <div id="info">
-                    Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
-                    Source code at <a href="https://github.com/hzqtc/hzqtc.github.com">GitHub</a>.
-                    Subscribe blog <a href="/atom.xml">feed</a>.
-                </div>
-                <div id="link">
-                    <p>
-                    <a href="http://github.com/hzqtc/">github.com/hzqtc</a><br />
-                    <a href="http://twitter.com/hzqtc/">twitter.com/hzqtc</a><br />
-                    <a href="http://johnny-huang.appspot.com/">johnny-huang.appspot.com</a>
-                    </p>
-                </div>
+                <p>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.</p>
+                <p>Designed and provided by hzqtc (Johnny Huang).</p>
             </div>
         </div>
     </body>
