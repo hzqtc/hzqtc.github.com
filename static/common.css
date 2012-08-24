@@ -111,7 +111,7 @@ div.post img {
     border: 1px solid #ddd;
 }
 
-div#post_neighbours {
+#post_neighbours {
     padding: 20px 0;
     margin: 20px 0;
     height: 20px;
@@ -119,12 +119,16 @@ div#post_neighbours {
     border-top: 3px double #eee;
 }
 
-div#post_neighbours div.left {
+#post_neighbours div.left {
     float: left;
 }
 
-div#post_neighbours div.right {
+#post_neighbours div.right {
     float: right;
+}
+
+#disqus_thread {
+    clear: both;
 }
 
 #side {
