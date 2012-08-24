@@ -11,9 +11,9 @@ layout: default
     <a href="/tags.html#tag_{{ tag }}">{{ tag }}</a>{% if forloop.last%}.{% else %},{% endif %}
     {% endfor %}
     </p>
+
     {{ content }}
-    <div id="disqus_thread"></div>
-    <script src="http://hzqtc.disqus.com/embed.js"></script>
+
     <ul id="post_neighbours">
         {% if page.previous %}
         <li class="left"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
@@ -22,5 +22,8 @@ layout: default
         <li class="right"><a href="{{ page.next.url }}">{{ page.next.title }}</a><li>
         {% endif %}
     </ul>
+
+    <div id="disqus_thread"></div>
+    <script src="http://hzqtc.disqus.com/embed.js"></script>
 </div>
 
