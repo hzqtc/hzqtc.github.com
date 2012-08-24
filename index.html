@@ -13,19 +13,10 @@ title: Home
     <a href="/tags.html#tag_{{ tag }}">{{ tag }}</a>{% if forloop.last%}.{% else %},{% endif %}
     {% endfor %}
     </p>
-    {{ post.content }}
-    <p class="meta"><a href="http://hzqtc.github.com{{ post.url }}#disqus_thread">Comments</a></p>
+    {{ post.content | replace:'more start -->','' | replace:'<!-- more end','' }}
+    <p class="meta"><a href="{{ post.url }}">More...</a></p>
 </div>
 {% endfor %}
-<script type="text/javascript">
-    var disqus_shortname = 'hzqtc';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
 <div id="pagination">
     <ul class="pages">
         <li>
