@@ -5,7 +5,7 @@
 
 body {
     font-family: "Droid Serif", "Georgia", serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
 }
 
@@ -19,7 +19,7 @@ a:hover {
 }
 
 #container {
-    width: 800px;
+    width: 1000px;
     margin: 30px auto;
 }
 
@@ -30,6 +30,7 @@ a:hover {
 
 #header h1 {
     font-size: 3em;
+    font-weight: normal;
     margin-bottom: 5px;
 }
 
@@ -46,7 +47,7 @@ a:hover {
 
 div.post {
     float: left;
-    width: 600px;
+    width: 800px;
     position: relative;
     margin: 20px 0;
 }
@@ -82,10 +83,11 @@ div.post span.hang {
     border-radius: 5px;
     position: absolute;
     left: -120px;
-    top: 0;
+    top: 3px;
     width: 100px;
     text-align: center;
     padding: 3px;
+    font-size: 0.9em;
 }
 
 div.post p.meta {
