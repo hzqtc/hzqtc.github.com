@@ -31,23 +31,11 @@
                 <div id="side">
                     <h1>links</h1>
                     <ul>
-                        <li><a href="/atom.xml"><i class="icon-rss"></i>Atom Feed</a></li>
-                        <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#122;&#113;&#116;&#99;&#49;&#50;&#50;&#57;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><i class="icon-envelope-alt"></i>Email</a></li>
-                        <li><a href="http://github.com/hzqtc/"><i class="icon-github"></i>Github</a></li>
-                        <li><a href="http://twitter.com/hzqtc/"><i class="icon-twitter"></i>Twitter</a></li>
-                        <li><a href="http://johnny-huang.appspot.com/"><i class="icon-globe"></i>Chinese Blog</a></li>
-                    </ul>
-                    <h1>categories</h1>
-                    <ul>
-                        {% for category in site.categories %}
-                        <li><a href="/categories.html#category_{{ category[0] }}"><i class="icon-folder-close"></i>{{ category[0] }} ({{ category[1].size }})</a></li>
-                        {% endfor %}
-                    </ul>
-                    <h1>tags</h1>
-                    <ul>
-                        {% for tag in site.tags %}
-                        <li><a href="/tags.html#tag_{{ tag[0] }}"><i class="icon-tag"></i>{{ tag[0] }} ({{ tag[1].size }})</a></li>
-                        {% endfor %}
+                        <li><a href="/atom.xml"><span class="icon-rss"></span>Atom Feed</a></li>
+                        <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#122;&#113;&#116;&#99;&#49;&#50;&#50;&#57;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><span class="icon-envelope-alt"></span>Email</a></li>
+                        <li><a href="http://github.com/hzqtc/"><span class="icon-github"></span>Github</a></li>
+                        <li><a href="http://twitter.com/hzqtc/"><span class="icon-twitter"></span>Twitter</a></li>
+                        <li><a href="http://johnny-huang.appspot.com/"><span class="icon-globe"></span>Chinese Blog</a></li>
                     </ul>
                     <h1>archives</h1>
                     <ul>
@@ -61,7 +49,7 @@
                         {% endif %}
 
                         {% if date != ndate %}
-                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><i class="icon-hdd"></i>{{ date }} ({{ count }})</a></li>
+                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><span class="icon-hdd"></span>{{ date }} ({{ count }})</a></li>
                         {% assign date = ndate %}
                         {% assign count = 1 %}
                         {% else %}
@@ -69,9 +57,21 @@
                         {% endif %}
 
                         {% if forloop.last %}
-                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><i class="icon-hdd"></i>{{ date }} ({{ count }})</a></li>
+                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><span class="icon-hdd"></span>{{ date }} ({{ count }})</a></li>
                         {% endif %}
 
+                        {% endfor %}
+                    </ul>
+                    <h1>categories</h1>
+                    <ul>
+                        {% for category in site.categories %}
+                        <li><a href="/categories.html#category_{{ category[0] }}"><span class="icon-folder-close"></span>{{ category[0] }} ({{ category[1].size }})</a></li>
+                        {% endfor %}
+                    </ul>
+                    <h1>tags</h1>
+                    <ul>
+                        {% for tag in site.tags %}
+                        <li><a href="/tags.html#tag_{{ tag[0] }}"><span class="icon-tag"></span>{{ tag[0] }} ({{ tag[1].size }})</a></li>
                         {% endfor %}
                     </ul>
                 </div>
