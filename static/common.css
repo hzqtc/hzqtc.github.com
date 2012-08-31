@@ -7,6 +7,7 @@ body {
     font-family: "Droid Serif", "Georgia", serif;
     font-size: 11pt;
     color: #333;
+    background: url('/static/background.png');
 }
 
 a {
@@ -19,17 +20,21 @@ a:hover {
 }
 
 #container {
-    width: 800px;
-    margin: 30px auto;
+    width: 1000px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
 }
 
 #header {
     padding-bottom: 20px;
-    border-bottom: 3px double #eee;
+    border-bottom: 3px double #ccc;
 }
 
 #header h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: normal;
     margin-bottom: 5px;
 }
@@ -40,20 +45,19 @@ a:hover {
 }
 
 #header h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: normal;
     font-style: italic;
 }
 
 div.post {
     float: left;
-    width: 600px;
-    position: relative;
+    width: 800px;
     margin: 20px 0;
 }
 
 div.post h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -81,9 +85,7 @@ div.post span.hang {
     background-color: #42588c;
     color: #fff;
     border-radius: 5px;
-    position: absolute;
-    left: -120px;
-    top: 3px;
+    float: right;
     width: 100px;
     text-align: center;
     padding: 3px;
@@ -119,8 +121,8 @@ div.post img {
     padding: 20px 0;
     margin: 20px 0;
     height: 20px;
-    border-bottom: 3px double #eee;
-    border-top: 3px double #eee;
+    border-bottom: 3px double #ccc;
+    border-top: 3px double #ccc;
 }
 
 #post_neighbours div.left {
@@ -160,7 +162,7 @@ div.post img {
 #pagination, #footer {
     clear: both;
     padding: 20px 0;
-    border-top: 3px double #eee;
+    border-top: 3px double #ccc;
 }
 
 #pagination {
