@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KVM Network Bridging
-category: virtualization
+category: setup
 tags: [kvm, network]
 ---
 
