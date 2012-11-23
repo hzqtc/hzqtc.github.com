@@ -142,6 +142,25 @@ div.post img {
     clear: both;
 }
 
+dl.about dt, dl.about dd {
+    line-height: 1.8em;
+}
+
+dl.about dt {
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    width: 120px;
+}
+
+dl.about dd {
+    margin-left: 130px;
+}
+
+dl.about dd ul {
+    list-style: none;
+}
+
 #side {
     float: right;
     width: 160px;
