@@ -120,6 +120,6 @@ duplications requires O (N * N) time (if you can improve this time bound, please
 let me know).
 
 Congratulations if you read here! You definitely have a potentiality to become
-as eggache as me!
+as ballache as me!
 
 <!-- more end -->
