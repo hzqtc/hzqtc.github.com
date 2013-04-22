@@ -16,6 +16,8 @@ normal files, because two same image may be in different formats, of different
 dimensions, have different sizes. Hash values can't be relied to detect image
 duplications, other image features should be taken into consideration.
 
+<!-- more start -->
+
 First of all, I will introduce you a simple but effective method for detecting
 image duplicates: [Perceptual Hash
 Algorithm](http://www.ruanyifeng.com/blog/2011/07/principle_of_similar_image_search.html).
