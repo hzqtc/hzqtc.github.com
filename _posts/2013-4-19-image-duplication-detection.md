@@ -16,24 +16,8 @@ normal files, because two same image may be in different formats, of different
 dimensions, have different sizes. Hash values can't be relied to detect image
 duplications, other image features should be taken into consideration.
 
-<!-- more start -->
-
-## The easy way
-
-[dupeGuru PE](http://www.hardcoded.net/dupeguru_pe/) is a great tool to find
-duplicate pictures. It's easy to use, efficient, cross platform and open source.
-The only thing that bothers me is that the pre-compiled binary can only handle
-10 duplications each time if you don't make a donation. You can of course
-compile your own binary but it gots too many dependencies, which makes compiling
-doesn't worth it. The alternative way is exporting duplication information and
-process it with your own scripts. Anyway, it's a good tool to try. If you want
-to do it with more fun, please read on.
-
-## The hard way
-
-The hard way to detect duplicate image is DIY. First of all, I will introduce
-you one of the most simple but effective methods for image duplication
-detection: [Perceptual Hash
+First of all, I will introduce you a simple but effective method for detecting
+image duplicates: [Perceptual Hash
 Algorithm](http://www.ruanyifeng.com/blog/2011/07/principle_of_similar_image_search.html).
 The basic idea to compute a fingerprint for each image and then compare the
 fingerprints. If two fingerprints are the same or very close, the two images are
