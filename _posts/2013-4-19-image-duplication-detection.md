@@ -114,7 +114,8 @@ Well, the results explain themselves.
 
 Assume you have N images, firstly scan them and compute their fingerprints. If
 you take 100% similarity as duplicate (which suggests duplications have
-identical fingerprints), we can find all duplications in O (N) time. If you
+identical fingerprints), we can find all duplications in O (N) time. ([This
+gist](https://gist.github.com/hzqtc/5431955) shows a possible solution.) If you
 define duplication as a similarity threshold (such as 90%), finding all
 duplications requires O (N * N) time (if you can improve this time bound, please
 let me know).
