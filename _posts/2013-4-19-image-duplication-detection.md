@@ -21,7 +21,7 @@ duplications, other image features should be taken into consideration.
 First of all, I will introduce you a simple but effective method for detecting
 image duplicates: [Perceptual Hash
 Algorithm](http://www.ruanyifeng.com/blog/2011/07/principle_of_similar_image_search.html).
-The basic idea to compute a fingerprint for each image and then compare the
+The basic idea is computing a fingerprint for each image and then comparing the
 fingerprints. If two fingerprints are the same or very close, the two images are
 probably duplicate to each other.
 
