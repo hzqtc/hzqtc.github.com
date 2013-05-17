@@ -78,10 +78,6 @@ div.post pre, div.post p {
     line-height: 1.5em;
 }
 
-div.post p {
-    text-align: justify;
-}
-
 div.post span.hang {
     font-family: "Lucida Unicode Sans", "Tahoma", sans-serif;
     background-color: #42588c;
