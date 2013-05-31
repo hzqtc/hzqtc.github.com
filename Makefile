@@ -1,8 +1,8 @@
 all:
-	jekyll --no-server --no-auto
+	jekyll build
 
 clean:
 	rm -rf _site
 
 server:
-	jekyll --server 8080 --auto
+	jekyll serve --watch --port 8080
