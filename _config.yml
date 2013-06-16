@@ -5,4 +5,4 @@ pygments: false
 permalink: /:year/:month/:title.html
 paginate: 5
 
-exclude: README.md
+exclude: [README.md]
