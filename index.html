@@ -14,7 +14,7 @@ title: Home
     {% endfor %}
     </p>
     {{ post.content | replace:'more start -->','' | replace:'<!-- more end','' }}
-    <p class="meta"><a href="{{ post.url }}">More...</a></p>
+    <p class="meta"><a href="{{ post.url }}#disqus_thread">More...</a></p>
 </div>
 {% endfor %}
 <div id="pagination">
@@ -54,3 +54,4 @@ title: Home
         </li>
     </ul>
 </div>
+<script src="http://hzqtc.disqus.com/count.js"></script>
