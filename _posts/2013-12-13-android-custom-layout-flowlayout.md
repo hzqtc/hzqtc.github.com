@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android Custom Flow Layout"
+title: "Android Custom Layout: FlowLayout"
 category: programming
 tags: [android, java, ui]
 ---
