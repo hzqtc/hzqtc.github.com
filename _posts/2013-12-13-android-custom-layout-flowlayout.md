@@ -43,7 +43,7 @@ protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
   int childTop = getPaddingTop();
   int lineHeight = 0;
   // 100 is a dummy number, widthMeasureSpec should always be EXACTLY for FlowLayout
-  int mydWidth = resolveSize(100, widthMeasureSpec);
+  int myWidth = resolveSize(100, widthMeasureSpec);
   int wantedHeight = 0;
   for (int i = 0; i < getChildCount(); i++) {
     final View child = getChildAt(i);
@@ -64,7 +64,7 @@ protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
       // wrap this line
       childLeft = getPaddingLeft();
       childTop += paddingVertical + lineHeight;
-      lineHeight = 0;
+      lineHeight = childHeight;
     }
     childLeft += childWidth + paddingHorizontal;
   }
@@ -94,7 +94,7 @@ protected void onLayout(boolean changed, int left, int top, int right, int botto
     if (childWidth + childLeft + getPaddingRight() > myWidth) {
       childLeft = getPaddingLeft();
       childTop += paddingVertical + lineHeight;
-      lineHeight = 0;
+      lineHeight = childHeight;
     }
     child.layout(childLeft, childTop, childLeft + childWidth, childTop + childHeight);
     childLeft += childWidth + paddingHorizontal;
