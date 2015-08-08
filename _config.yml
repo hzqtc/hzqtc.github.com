@@ -1,7 +1,7 @@
 safe: true
 url: http://hzqtc.github.com/
 
-pygments: false
+highlighter: pygments
 permalink: /:year/:month/:title.html
 paginate: 5
 

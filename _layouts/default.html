@@ -5,7 +5,7 @@
         <title>Johnny Huang &raquo; {{ page.title }}</title>
         <link href="/atom.xml" rel="alternate" title="Johnny Huang" type="application/atom+xml">
         <link href="/static/common.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="/static/highlight.pack.js"></script>
         <link href="/static/highlight.css" rel="stylesheet">
         <script>hljs.initHighlightingOnLoad();</script>
@@ -31,11 +31,11 @@
                 <div id="side">
                     <h1>links</h1>
                     <ul>
-                        <li><a href="/about.html"><i class="fa fa-user fa-fw"></i>About Me</a></li>
-                        <li><a href="/atom.xml"><i class="fa fa-rss fa-fw"></i>Atom Feed</a></li>
-                        <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#122;&#113;&#116;&#99;&#49;&#50;&#50;&#57;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><i class="fa fa-envelope fa-fw"></i>Email</a></li>
-                        <li><a href="http://github.com/hzqtc/"><i class="fa fa-github-alt fa-fw"></i>Github</a></li>
-                        <li><a href="http://twitter.com/hzqtc/"><i class="fa fa-twitter fa-fw"></i>Twitter</a></li>
+                        <li><a href="/about.html"><i class="fa fa-user"></i>About Me</a></li>
+                        <li><a href="/atom.xml"><i class="fa fa-rss"></i>Atom Feed</a></li>
+                        <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#122;&#113;&#116;&#99;&#49;&#50;&#50;&#57;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><i class="fa fa-envelope"></i>Email</a></li>
+                        <li><a href="http://github.com/hzqtc/"><i class="fa fa-github-alt"></i>Github</a></li>
+                        <li><a href="http://twitter.com/hzqtc/"><i class="fa fa-twitter"></i>Twitter</a></li>
                     </ul>
                     <h1>archives</h1>
                     <ul>
@@ -49,7 +49,7 @@
                         {% endif %}
 
                         {% if date != ndate %}
-                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><i class="fa fa-archive fa-fw"></i>{{ date }} ({{ count }})</a></li>
+                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><i class="fa fa-archive"></i>{{ date }} ({{ count }})</a></li>
                         {% assign date = ndate %}
                         {% assign count = 1 %}
                         {% else %}
@@ -57,7 +57,7 @@
                         {% endif %}
 
                         {% if forloop.last %}
-                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><i class="fa fa-archive fa-fw"></i>{{ date }} ({{ count }})</a></li>
+                        <li><a href="/archives.html#archive_{{ date | date: '%Y_%m' }}"><i class="fa fa-archive"></i>{{ date }} ({{ count }})</a></li>
                         {% endif %}
 
                         {% endfor %}
@@ -65,13 +65,13 @@
                     <h1>categories</h1>
                     <ul>
                         {% for category in site.categories %}
-                        <li><a href="/categories.html#category_{{ category[0] }}"><i class="fa fa-folder fa-fw"></i>{{ category[0] }} ({{ category[1].size }})</a></li>
+                        <li><a href="/categories.html#category_{{ category[0] }}"><i class="fa fa-folder"></i>{{ category[0] }} ({{ category[1].size }})</a></li>
                         {% endfor %}
                     </ul>
                     <h1>tags</h1>
                     <ul>
                         {% for tag in site.tags %}
-                        <li><a href="/tags.html#tag_{{ tag[0] }}"><i class="fa fa-tag fa-fw"></i>{{ tag[0] }} ({{ tag[1].size }})</a></li>
+                        <li><a href="/tags.html#tag_{{ tag[0] }}"><i class="fa fa-tag"></i>{{ tag[0] }} ({{ tag[1].size }})</a></li>
                         {% endfor %}
                     </ul>
                 </div>
