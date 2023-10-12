@@ -1,5 +1,5 @@
 safe: true
-url: http://hzqtc.github.com/
+url: http://hzqtc.github.io/
 
 highlighter: pygments
 permalink: /:year/:month/:title.html
