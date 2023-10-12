@@ -3,5 +3,5 @@ title: Sitemap
 ---
 
 {% for post in site.posts %}
-http://hzqtc.github.io{{ post.url }}
+https://hzqtc.github.io{{ post.url }}
 {% endfor %}
